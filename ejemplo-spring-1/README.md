@@ -3,18 +3,29 @@
 
 Ejemplo creado a con de [Spring Initializr](https://start.spring.io/) basado en Spring Boot utilizando Gradle y dependencias de Spring Web.
 
-Requisitos previos:
+### Requisitos
 * Java 8 o superior 
 * Gradle 5.x o superior (opcional)
 
-Instalación
+### Instalación
 * Descargar el código fuente
 * En la línea de comandos, dirigirse a la carpeta del proyecto
 * Iniciar proyecto Gradle con el comando `gradlew` en Windows y con `/.gradlew` Linux/ Mac
 
-* Configurar URL de conexión en application.resources 
+* Configurar URL de conexión en `application.resources`
 
 * Ejecutar proyecto de desarrollo con `gradlew runBoot`
+
+### Ejecutando la aplicación
+Al probar la dirección:
+```
+$ curl http://localhost:9000/hello
+```
+Debe retornar:
+```
+Hello World!
+```
+
 
 
 
