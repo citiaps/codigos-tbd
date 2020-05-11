@@ -3,6 +3,9 @@ package cl.tbd.ejemplo1.services;
 import cl.tbd.ejemplo1.models.Dog;
 import cl.tbd.ejemplo1.repositories.DogRepository;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -23,6 +26,13 @@ public class DogService {
     @GetMapping("/dogs/count")
     public String countDogs(){
         int total = dogRepository.countDogs();
-        return String.format("You have %s dogs!!", total);
+        return String.format("Tienes %s perros!!", total);
+    }
+
+    @PostMapping("/dogs")
+    @ResponseBody
+    public Dog createDog(@RequestBody Dog dog){
+        Dog result = dogRepository.createDog(dog);
+        return result;
     }
 }

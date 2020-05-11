@@ -5,4 +5,5 @@ import cl.tbd.ejemplo1.models.Dog;
 public interface DogRepository {
     public int countDogs();
     public List<Dog> getAllDogs();
+    public Dog createDog(Dog dog);
 }
