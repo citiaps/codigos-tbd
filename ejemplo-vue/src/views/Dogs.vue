@@ -4,7 +4,7 @@
     <ul class="item-list">
       <li v-for="(item, index) in items" :key="index">
        <!-- <img :src="'https://loremflickr.com/160/120/dog?lock='+i"/>-->
-        {{item.name}}
+        {{index}} - {{item.name}}
       </li>
     </ul>
     <div v-if="items.length==0" class="empty-list">
@@ -27,6 +27,7 @@ export default {
             try {
                 let response = await this.$http.get('/dogs');
                 this.items  = response.data;
+                console.log(response)
             } catch (error) {
                 console.log('error', error);
             }

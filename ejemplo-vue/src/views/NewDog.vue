@@ -33,6 +33,7 @@ export default {
             this.message = '';
             if (this.newDog.name == ''){
                 this.message = 'Debes ingresar un nombre'
+                return false
             }
             try {
                 var result = await this.$http.post('/dogs', this.newDog);
