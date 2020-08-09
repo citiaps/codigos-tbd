@@ -10,3 +10,5 @@ En esta carpeta se encuentran los códigos de proyectos vistos en clases
 * Ejemplo 3 [Consultas a BD Geolocalizada](./ejemplo-spring-gis)
 
 * Ejemplo 4 [Visualización de datos geolocalizados en un mapa](./ejemplo-mapas)
+
+* Ejemplo 5 [Conexión a MongoDB](./ejemplo-mongodb)
