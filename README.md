@@ -12,3 +12,5 @@ En esta carpeta se encuentran los códigos de proyectos vistos en clases
 * Ejemplo 4 [Visualización de datos geolocalizados en un mapa](./ejemplo-mapas)
 
 * Ejemplo 5 [Conexión a MongoDB](./ejemplo-mongodb)
+
+* Ejemplo 6 [Conexión a MongoDB](./ejemplo-mongo-avanzado)
